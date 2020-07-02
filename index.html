@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/21875b1641.js" crossorigin="anonymous"></script>
+    <title>ShopCake Project</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="nav-bar">
+            <a href="" class="logo-a">
+                <span class="logo">
+                    <img src="img/iconfinder_612_cake_cup_cake_Muffins_baked__sweets_valentine_valentines_day_love_4171319.png"
+                        alt="">
+                </span>
+            </a>
+            <span class="bars">
+                <img id="img-logo-little"
+                    src="img/iconfinder_612_cake_cup_cake_Muffins_baked__sweets_valentine_valentines_day_love_4171319.png"
+                    alt="">
+                <i class="fas fa-bars fa-2x"></i>
+            </span>
+            <span class="close">
+                <i class="fas fa-times fa-2x"></i>
+            </span>
+            <div class="nav-bar-menu">
+                <ul class="nav-bar-ul">
+                    <a href="#header">
+                        <li>Home</li>
+                    </a>
+                    <a href="#sobre">
+                        <li>Sobre</li>
+                    </a>
+                    <a href="#loja">
+                        <li>Loja</li>
+                    </a>
+                    <a href="#servicos">
+                        <li>Serviços</li>
+                    </a>
+                    <a href="#contato">
+                        <li>Contato</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="nav-info">
+                <span class="nav-cart">
+                    <i class="fas fa-shopping-cart fa-lg"></i>
+                </span>
+                <span class="item-count">0</span> itens - $
+                <span class="item-total">00.00</span>
+            </div>
+        </nav>
+        <section class="container">
+            <div class="box-container">
+                <h1>Bem vindo ao <br> <strong class="title">Shop Cake</strong></h1>
+                <a href="#loja" class="btn-explo">Explorar</a>
+            </div>
+            <div class="cart" id="cart">
+                <div class="container-cart"></div>
+                <div class="cart-container-total">
+                    <h5>Total</h5>
+                    <span>$ <strong id="cart-total">00.00</strong></span>
+                </div>
+                <div class="cart-container-btn">
+                    <a href="#header" id="limpar-cart">Limpar</a>
+                    <a href="#header" id="comprar-cart">Comprar</a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="sobre" id="sobre">
+        <div class="container-sobre">
+            <div class="text-sobre">
+                <h1>Sobre <strong class="title-sobre">nós</strong></h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into
+                    electronic typesetting, remaining essentially unchanged.</p>
+            </div>
+            <div class="sobre-img">
+                <img src="img/arts-and-crafts-blur-close-up-cupcake-268364.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+    <section class="loja" id="loja">
+        <div class="container-loja">
+            <div class="text-loja">
+                <h1>Nossa <strong class="title-loja">Loja</strong></h1>
+            </div>
+            <div class="loja-menu">
+                <ul>
+                    <li><a href="#loja" onclick="filterSelection('all')">Tudo</a></li>
+                    <li><a href="#loja" onclick="filterSelection('cup')">Cupcakes</a></li>
+                    <li><a href="#loja" onclick="filterSelection('macaron')">Macarom</a>
+                    </li>
+                    <li><a href="#loja" onclick="filterSelection('bolo')">Bolo</a></li>
+                    <li><a href="#loja" onclick="filterSelection('doces')">Doces</a></li>
+                </ul>
+            </div>
+            <div class="form">
+                <form action="">
+                    <input type="text" placeholder=" Search" id="search" class="input-form">
+                    <button class="btn-form" id="btn-search"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="loja-itens">
+            <div class="img-container-loja" id="container-loja">
+                <div class="box-img cup">
+                    <img src="img/cup01.jpg" alt="">
+                    <span class="loja-cart"><i class="fas fa-shopping-cart fa-lg"></i></span>
+                    <div class="item-text">
+                        <h5 class="item-nome">Cupcake Creme</h5>
+                        <h5 class="item-value">$ <strong class="item-preco">10</strong></h5>
+                    </div>
+                </div>
+                <div class="box-img cup ">
+                    <img src="img/cup02.jpg" alt="">
+                    <span class="loja-cart"><i class="fas fa-shopping-cart fa-lg"></i></span>
+                    <div class="item-text">
+                        <h5 class="item-nome">Cupcake Choco</h5>
+                        <h5 class="item-value">$ <strong class="item-preco">9</strong></h5>
+                    </div>
+
+                </div>
+                <div class="box-img cup ">
+                    <img src="img/cup03.jpg" alt="">
+                    <span class="loja-cart"><i class="fas fa-shopping-cart fa-lg"></i></span>
+                    <div class="item-text">
+                        <h5 class="item-nome">Cupcake Moran</h5>
+                        <h5 class="item-value">$ <strong class="item-preco">25</strong></h5>
+                    </div>
+
+                </div>
+                <div class="box-img cup">
+                    <img src="img/cup04.jpg" alt="">
+                    <span class="loja-cart"><i class="fas fa-shopping-cart fa-lg"></i></span>
+                    <div class="item-text">
+                        <h5 class="item-nome">Cupcake Maca</h5>
+                        <h5 class="item-value">$ <strong class="item-preco">6.99</strong></h5>
+                    </div>
+
+                </div>
+                <div class="box-img bolo ">
+                    <img src="img/bolo01.jpg" alt="">
+                    <span class="loja-cart"><i class="fas fa-shopping-cart fa-lg"></i></span>
+                    <div class="item-text">
+                        <h5 class="item-nome">Bolo Choco</h5>
+                        <h5 class="item-value">$ <strong class="item-preco">21</strong></h5>
+                    </div>
+
+
+                </div>
+                <div class="box-img bolo ">
+                    <img src="img/bolo02.jpg" alt="">
+                    <span class="loja-cart"><i class="fas fa-shopping-cart fa-lg"></i></span>
+                    <div class="item-text">
+                        <h5 class="item-nome">Super-Choco</h5>
+                        <h5 class="item-value">$ <strong class="item-preco">28</strong></h5>
+                    </div>
+
+                </div>
+
+                <div class="box-img bolo ">
+                    <img src="img/bolo03.jpg" alt="">
+                    <span class="loja-cart"><i class="fas fa-shopping-cart fa-lg"></i></span>
+                    <div class="item-text">
+                        <h5 class="item-nome">Bolo Moran</h5>
+                        <h5 class="item-value">$ <strong class="item-preco">5</strong></h5>
+                    </div>
+
+                </div>
+                <div class="box-img macaron ">
+                    <img src="img/macaron01.jpg" alt="">
+                    <span class="loja-cart"><i class="fas fa-shopping-cart fa-lg"></i></span>
+                    <div class="item-text">
+                        <h5 class="item-nome">Macaron sweet</h5>
+                        <h5 class="item-value">$ <strong class="item-preco">5</strong></h5>
+                    </div>
+
+                </div>
+                <div class="box-img macaron ">
+                    <img src="img/macaron02.jpg" alt="">
+                    <span class="loja-cart"><i class="fas fa-shopping-cart fa-lg"></i></span>
+                    <div class="item-text">
+                        <h5 class="item-nome">Kit Macaron</h5>
+                        <h5 class="item-value">$ <strong class="item-preco">5</strong></h5>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="servicos" id="servicos">
+        <div class="container-service">
+            <div class="box-service">
+                <img src="img/iconfinder_cake_87852.png" alt="">
+                <div class="text-service">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+            <div class="box-service">
+                <img src="img/iconfinder_Macaron_2139169.png" alt="">
+                <div class="text-service">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+            <div class="box-service">
+                <img src="img//iconfinder_633_Bakery_cake_cup_dessert_valentine_valentines_day_love_4171298.png" alt="">
+                <div class="text-service">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="contato" id="contato">
+        <div class="container-contato">
+            <div class="tele">
+                <i class="fas fa-phone fa-2x"><strong class="nume">+55 (81)98625-7854</strong></i>
+                <i class="fas fa-envelope-square fa-2x"><strong class="nume"> Email: shopcake@gmail.com</strong></i>
+            </div>
+            <div class="social">
+                <h3>Midias sociais</h3>
+                <div class="rede">
+                    <i class="fab fa-twitter-square fa-3x"></i>
+                    <i class="fab fa-facebook-square fa-3x"></i>
+                    <i class="fab fa-instagram-square fa-3x"></i>
+                    <i class="fab fa-whatsapp-square fa-3x"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
